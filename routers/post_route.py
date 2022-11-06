@@ -3,9 +3,9 @@ import shutil
 import string
 from typing import List
 
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, status
 from sqlalchemy.orm import Session
-from starlette import status
+
 
 from auth.oauth2 import get_current_user
 from db.database import get_db
